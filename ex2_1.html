@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2.1</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+
+        p{
+            text-align: center;
+        }
+        #entrada{
+            outline: none;
+            margin-bottom: 10px;
+            padding: 7px;
+        }
+
+        #enviar,#limpar{
+            margin-bottom: 10px;
+            padding: 7px;
+        }
+
+        h3{
+            height: 0;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Conversão </h1>
+    <form>
+            <input type="number" id="entrada" required autofocus placeholder="digite o tempo...">
+        
+        <p>Horas
+            <input type="radio" name="horas" id="horas" required> ---EM---
+            <input type="radio" name="horas" id="horas" required>Min
+        </p>
+
+        <input type="submit" value="Converte" id="enviar">
+        <input type="reset" value="Limpar" id="limpar">
+    
+    </form>
+    <h3></h3>
+    <script src="js/ex2_1.js"></script>
+</body>
+</html>
